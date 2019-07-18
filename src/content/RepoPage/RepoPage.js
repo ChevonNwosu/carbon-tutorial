@@ -106,7 +106,7 @@ const RepoPage = () => {
                 return (
                   <DataTableSkeleton
                     columnCount={headers.length + 1}
-                    rowCount={10}
+                    rowCount={12}
                     headers={headers}
                   />
                 );
@@ -118,7 +118,6 @@ const RepoPage = () => {
               const { repositories } = organization;
               setTotalItems(repositories.totalCount);
               const rows = getRowItems(repositories.nodes);
-
               return (
                 <>
                   <RepoTable
